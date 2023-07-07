@@ -1,6 +1,6 @@
 import "./intro.scss";
-import { init } from 'ityped';
-import  { useEffect, useRef } from "react";
+import { init } from "ityped";
+import { useEffect, useRef } from "react";
 
 export default function Intro() {
   const textRef = useRef();
@@ -9,8 +9,8 @@ export default function Intro() {
     init(textRef.current, {
       showCursor: true,
       backDelay: 1500,
-      backSpeed: 60,
-      strings: ["Developer", "COntent Creator", "Designer"],
+      backSpeed:60,
+      strings: ["Developer", "Designer", "Content Creator"],
     });
   }, []);
 
@@ -19,7 +19,7 @@ export default function Intro() {
       <div className="left">
         <div className="imgContainer">
           <img src="assets/mine.jpeg" alt="" />
-        </div>              
+        </div>
       </div>
       <div className="right">
         <div className="wrapper">
@@ -32,7 +32,7 @@ export default function Intro() {
         <a href="#portfolio">
           <img src="assets/down.jpg" alt="" />
         </a>
-        </div>    
+      </div>
     </div>
   );
 }
